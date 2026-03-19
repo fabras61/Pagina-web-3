@@ -1,0 +1,365 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: #1e1e1e;
+    color: #e4e4e4;
+    line-height: 1.6;
+}
+
+header {
+    background: #1e1e1e;
+    padding: 20px 60px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.whatsapp:hover {
+    background-color: chartreuse;
+    color: #111;
+}
+
+.Logo h1 {
+    font-size: 22px;
+    font-weight: 600;
+    color: white;
+}
+
+.Logo h2 {
+    font-size: 13px;
+    color: #bfa14a;
+    font-weight: 400;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ddd;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #bfa14a;
+}
+
+#hero {
+    padding-top: 2rem;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/foto4-7.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 1rem;
+}
+
+#hero h1 {
+    margin-bottom: 1rem;
+}
+
+#hero h2 {
+    margin-bottom: 1rem;
+}
+
+#hero a {
+    text-decoration: none;
+    background-color: #bfa14a;
+    color: black;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+#hero a:hover {
+    background-color: #ddd;
+    color: #bfa14a;
+}
+
+.Conocenos {
+    background-color: #0a0a0a;
+    padding: 80px 20px;
+    max-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 40px;
+    padding: 100px 10%;
+    align-items: center;
+}
+
+#Conocenos h1 {
+    max-height: 100vh;
+    grid-column: 1 / 3;
+    text-align: center;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    text-decoration-color: #bfa14a;
+}
+
+#Conocenos h3 {
+    max-height: 100vh;
+    grid-column: 1;
+    font-size: 16px;
+    line-height: 1.8;
+    text-align: left;
+    max-width: 500px;
+}
+
+#Conocenos img {
+    grid-column: 2;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+#casosdeexitos {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#casosdeexitos h1 {
+    text-align: center;
+    margin-bottom: 3rem;
+    text-decoration: underline;
+    text-decoration-color: #bfa14a;
+}
+
+.casosdeexitos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.caso-card {
+    background:#111;
+    padding: 1.8rem;
+    border-radius: 8px;
+    border-left: 4px solid #bfa14a;
+}
+
+.caso-card h3 {
+    margin-bottom: 0.8rem;
+}
+
+.caso-card p {
+    line-height: 1.6;
+}
+
+.preguntasfrecuentes {
+    background-color: #0a0a0a;
+    padding: 80px 10%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+#preguntasfrecuentes h1 {
+    text-align: center;
+    margin-bottom: 3rem;
+    text-decoration: underline;
+    text-decoration-color: #bfa14a;
+}
+
+#preguntasfrecuentes h3 {
+    font-size: 20px;
+    color: #ffffff;
+    margin-top: 25px;
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 18px;
+}
+
+#preguntasfrecuentes h3::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 6px;
+    width: 4px;
+    height: 18px;
+    background: #bfa14a;
+    border-radius: 2px;
+}
+
+#preguntasfrecuentes p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #d0d0d0;
+    margin-bottom: 20px;
+    max-width: 800px;
+}
+
+.contacto {
+    background-color: #0a0a0a;
+    padding: 80px 20px;
+}
+
+#contacto h1 {
+    text-align: center;
+    font-size: 38px;
+    margin-bottom: 40px;
+    text-decoration: underline;
+    text-decoration-color: #bfa14a;
+}
+
+.contacto-container {
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.contacto-form p {
+    padding: 5px;
+    font-family: 'Verdana';
+    line-height: 1.7;
+    max-width: 600px;
+    margin-bottom: 30px;
+    color: #d0d0d0;
+    margin: auto;
+}
+
+.contacto-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.contacto-form input,
+.contacto-form textarea {
+    padding: 16px;
+    border-radius: 8px;
+    border: none;
+    background: #2a2a2a;
+    color: white;
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+.contacto-form input:focus,
+.contacto-form textarea:focus {
+    outline: none;
+    background: #333;
+}
+
+.contacto-form textarea {
+    height: 140px;
+    resize: none;
+}
+
+.contacto-form button {
+    background: #c9a646;
+    color: #111;
+    border: none;
+    padding: 16px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contacto-form button:hover {
+    background: #e2bf5c;
+    transform: translateY(-2px);
+}
+
+.contacto-container img {
+    margin: auto;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 40px 40px rgba(0, 0, 0, 0.6);
+    object-fit: cover;
+}
+
+#Horarios {
+    padding: 120px 10%;
+    max-width: 1400px;
+    margin: auto;
+}
+
+#Horarios h1 {
+    text-align: center;
+    font-size: 38px;
+    margin-bottom: 40px;
+    text-decoration: underline;
+    text-decoration-color: #bfa14a;
+}
+
+#Horarios h3 {
+    text-align: center;
+    font-size: 25px;
+}
+
+footer {
+    background: #0f0f0f;
+    padding: 70px 10%;
+    margin-top: 60px;
+}
+
+footer .logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.footer-redes h3 {
+    margin-bottom: 10px;
+    color: white;
+}
+
+.footer-redes a {
+    display: block;
+    text-decoration: none;
+    color: #bbb;
+    margin-top: 6px;
+    transition: 0.2s;
+}
+
+.footer-redes a:hover {
+    color: #bfa14a;
+}
+
+footer p {
+    margin-top: 40px;
+    font-size: 14px;
+    color: #888;
+}
